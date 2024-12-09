@@ -163,4 +163,4 @@ cython_debug/
 
 _save/**
 #exclude inputs as instructed in AoC "about"
-**/input.txt
+**/*input.txt
