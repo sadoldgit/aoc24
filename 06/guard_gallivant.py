@@ -68,9 +68,9 @@ class GuardGallivant:
                     new_x = croad[1] + MOVE[heading][1]
                     yield (new_y, new_x)
 
-# 552 too low
+
 if __name__ == '__main__':
-    with open(sys.argv[1] if len(sys.argv) > 1 else 'example_input.txt') as f:
+    with open(sys.argv[1] if len(sys.argv) > 1 else 'input.txt') as f:
         guard_map = [list(line[:-1]) for line in f.readlines()]
     gg = GuardGallivant(guard_map)
     guard_path = gg.map_coverage()
